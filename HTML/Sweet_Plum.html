@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags  -->
+    <meta name="description" content="Minitsu products page">
+    <meta name="author" content="Riam Basnet Kshitiz Shrestha Sujal Maharjan Aarya Pradhan Bidur Neupane">
+    <meta name="keywords" content="Sweet Plum buy now with best price discount">
+    <!-- meta tags  -->
+
+    <link rel="stylesheet" href="../CSS/Products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins&family=Sora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        html {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+        }
+    </style>
+    <title>Sweet Plum</title>
+</head>
+
+
+<body>
+    <!-- start of nav bar -->
+    <header class="navbar">
+        <!--logo in the navigation bar also redirecting to the homepage-->
+        <div class="logo">
+            <a href="../homePage.html"><img src="../images/General/logo.png" width="200px" height="65px"></a>
+        </div>
+    
+        <!--individual links to navigate to different pages-->
+        <div>   
+            <ul class="center_content">
+                <li><a href="../homePage.html">Home</a></li>
+                <li><a href="main_products.html">Products</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="wbfu.html">Why buy from us?</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+            </ul>
+        </div>
+        <!--navigate to cart section and user section from navigation bar-->
+        <div class="right">
+            <ul class="right_content">
+                <li class="cart"><a href="" onclick="featureFunction(); return false;"><img src="../images/General/black_cart.png" width="23px" height="23px"></a></li>
+                <li class="user"><a href="" onclick="featureFunction(); return false;"><img src="../images/General/black_profile.png" width="28px" height="28px"></a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- end of nav bar -->
+
+
+    <!--picture Div-->
+    <div class="big_image">
+        <!--big picture change image as you go on-->
+        <div class="bimg">
+            <img src="../images/Individual_products/Sweet_Plum/2.jpg" alt="" class="big_image_1" id="prodImg">
+        </div>
+        
+
+        <!-- image row -->
+        <div class="img-row">
+            <div class="smal-img-col">
+                <img src="../images/Individual_products/Sweet_Plum/1.jpg" alt="" class="mini-img">
+            </div>
+            <div class="smal-img-col">
+                <img src="../images/Individual_products/Sweet_Plum/2.jpg" alt="" class="mini-img">
+            </div>
+            <div class="smal-img-col">
+                <img src="../images/Individual_products/Sweet_Plum/3.jpg" alt="" class="mini-img">
+            </div>
+            <div class="smal-img-col">
+                <img src="../images/Individual_products/Sweet_Plum/4.jpg" alt="" class="mini-img">
+            </div>
+
+        </div>
+
+
+        <!-- JAVA SCRIPT -->
+        <script>
+
+            var prodImg = document.getElementById("prodImg");
+            var smallImg = document.getElementsByClassName("mini-img");
+
+            smallImg[0].onclick = function () {
+                prodImg.src = smallImg[0].src;
+            }
+            smallImg[1].onclick = function () {
+                prodImg.src = smallImg[1].src;
+            }
+            smallImg[2].onclick = function () {
+                prodImg.src = smallImg[2].src;
+            }
+            smallImg[3].onclick = function () {
+                prodImg.src = smallImg[3].src;
+            }
+            smallImg[4].onclick = function () {
+                prodImg.src = smallImg[4].src;
+            }
+
+        </script>
+        <!-- JAVA SCRIPT -->
+
+
+        <!--Information section-->
+        <div class="info_section">
+            <div class="rect1">
+                <p class="plantname">Sweet Plum</p>
+               <p class="originalprice" style="text-decoration: line-through;">रु 6000</p>
+               <p class="discountedprice">रु 5000</p>
+               <p class="description">Sweet plum leaves are tiny, oval, light green, and glossy. Late in the summer, panicles of yellowish white flowers and little blue fruits may appear. South Asian nations generate a significant amount of sweet plums.</p>
+               <ul class="specifications">Specifications:
+                   <li class="item1">Age: 3 Years Old</li>
+                   <li class="item2">Height: About 40cm Tall</li>
+                   <li class="item3">Pot: 5" Ceramic Pot</li>
+                   <li class="item4">Level: Beginner/Intermediate</li>
+               </ul>
+               <p class="description">
+                Quantity
+                <div class="quantity">
+                    <span class="minus">-</span>
+                    <span class="num">01</span>
+                    <span class="plus">+</span>
+                  </div>
+                  <script>
+                   const plus = document.querySelector(".plus"),
+                    minus = document.querySelector(".minus"),
+                    num = document.querySelector(".num");
+                    let a = 1;
+                    plus.addEventListener("click", ()=>{
+                      a++;
+                      a = (a < 10) ? "0" + a : a;
+                      num.innerText = a;
+                    });
+                    minus.addEventListener("click", ()=>{
+                      if(a > 1){
+                        a--;
+                        a = (a < 10) ? "0" + a : a;
+                        num.innerText = a;
+                      }
+                    });
+
+                  </script>
+               
+               <button type="submit" class="buttoncart" onclick="addToCart()">ADD TO CART</button>
+
+               <button type="submit" class="buttonwishlist" onclick="addWishList()">ADD TO WISHLIST</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER CODE STARTS FROM HERE  -->
+    <div class="footer">
+        <div class="column1">
+            <img src="../images/General/transparent_logo.png" height="110px" width="130px">
+            <h1 style="font-family: 'Sora'; font-size: 50px; margin-top: 15px;">Minitsu.</h1>                
+        </div>
+        <div class="column2">
+            <h3 style="margin-bottom: 0px; font-family:'Poppins'; color: #ffffff;"> Join our Mailing list!</h3>
+            <!--JavaScript-->
+            <script type="text/javascript" src="../JavaScript/general.js">
+            </script>
+            <!--JavaScript-->
+            <form name="Subscription" onsubmit="newsletterFunction();  return false;"><!-- making sure the page doesnt scroll back to top on click -->
+                <input type="text" name="email" placeholder="Email" >
+                <button type="submit" id="newsletter">Subscribe</button>
+            </form>
+        </div>
+        <div class="column3">
+           <h3>Our Services</h3>
+            <a href="homePage.html">Home</a>
+            <a href="main_products.html">Products</a>
+            <a href="aboutUs.html">About us</a>
+            <a href="wbfu.html">Why buy from us?</a>
+            <a href="Blog.html">Blog</a>
+            <a href="research.html">Research</a>
+        </div>
+        <div class="column4">
+            <h3> Follow us</h3>
+            <div class="icons">
+                <a href="https://instagram.com/" target="_blank"><img src="../images/General/instagram.png" height="35px" width="35px"></a>
+                <a href="https://youtube.com/" target="_blank"><img src="../images/General/youtube.png" height="35px" width="45px"></a>
+                <a style="margin-bottom: 5px;" href="https://facebook.com/" target="_blank"><img src="../images/General/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png" height="50px" width="45px"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="../images/General/twitter.png" height="35px" width="35px"></a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

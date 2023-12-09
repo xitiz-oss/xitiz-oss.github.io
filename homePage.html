@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minitsu</title>
+        <!--internal css-->
+        <style>
+            html{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+                /* makes the scrolling of the page smooth */
+                scroll-behavior: smooth;
+            }
+        </style>
+        <!--importing fonts from google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins&family=Sora&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <!--linking the html and css file-->
+
+        <!-- meta tags  -->
+        <meta name="description" content="Minitsu online bonsai website based in Japan.">
+        <meta name="author" content="Riam Basnet Kshitiz Shrestha Sujal Maharjan Aarya Pradhan Bidur Neupane">
+        <meta name="keywords" content="Minitsu Home Page">
+        <!-- meta tags  -->
+
+        <link rel="stylesheet" href="./CSS/homePage.css">
+    </head>
+    <body>
+        <!--making the navigation bar-->
+        <header class="navbar">
+            <!--logo in the navigation bar also redirecting to the homepage-->
+            <div class="logo">
+                <a href="homePage.html"><img src="./images/General/logo.png" width="200px" height="65px"></a>
+            </div>
+
+            <!--individual links to navigate to different pages-->
+            <div>   
+                <ul class="center_content">
+                    <li><a href="homePage.html">Home</a></li>
+                    <li><a href="./HTML/main_products.html">Products</a></li>
+                    <li><a href="./HTML/Blog.html">Blog</a></li>
+                    <li><a href="./HTML/research.html">Research</a></li>
+                    <li><a href="./HTML/wbfu.html">Why buy from us?</a></li>
+                    <li><a href="./HTML/aboutUs.html">About us</a></li>
+                </ul>
+            </div>
+            <!--navigate to cart section and user section from navigation bar-->
+            <div class="right">
+                <ul class="right_content">
+                    <li class="cart"><a href="" onclick="featureFunction(); return false;"><img src="./images/General/black_cart.png" width="23px" height="23px"></a></li>
+                    <li class="user"><a href="" onclick="featureFunction(); return false;"><img src="./images/General/black_profile.png" width="28px" height="28px"></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!--background for the page until some point-->
+        <section class="banner">
+            <h1 class="heading">Minitsu.</h1>
+            <p class="quote" style="bottom: 29%;">"The object is not to make the tree look like a bonsai, but to make the bonsai look like a tree."</p>
+            <br>
+            <h3 class="quote" style="bottom: 25%;">---John Naka---</h3>
+        </section>
+
+        <!--Javascript portion for navbar changing on scroll(sticky)-->
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){      /*attaches scroll event to the element i.e; when scroll event carried in window, the function is triggered*/
+                var header = document.querySelector("header"); /* querySelector() returns the first element that has been specified,
+                in this case it searched for the first header available and selects it*/
+                header.classList.toggle("sticky",window.scrollY > 750);/* classList is a read-only property, working with the CSS classes of the header element,
+                classList.toggle() is used to toggle(hide and show CSS classes) the classes to the element sticky when scrolled after 750px of window*/
+            })
+        </script>
+
+        <!--start of History section-->
+        <h1 style="font-family: 'Sora'; margin-left: 100px;font-size: 70px;">History</h1>
+
+        <!--card slider section-->
+        <div class="carousel" style="margin-bottom: 35px;">
+            <!--image of icon indicating the direction to scroll towards-->
+            <img style="margin-left: 100px;" src="./images/home_page/44522.png" width="35px" height="35px">
+            <div class="within_carousel">
+                <div class="slider"> 
+                    <!--individual cards with individual images and content explaing history of bonsai
+                        alt attribute is used to diplay a text as an alternative if image is not loaded
+                        widthh and height is used to specify the image orientation
+                    -->
+                    <div class="card">
+                        <img src="./images/home_page/A7A33AE1-935D-43E3-B9EC-D04BBA52702F_4_5005_c.jpeg" alt="img" width="320px" height="220px">
+                        <p>Perhaps more than a thousand years ago, in China, the bonsai art form was developed. By the year 700 AD, the Chinese had developed the "pun-sai" art, which involved using unique methods to cultivate and care for tiny trees in containers.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/home_page/card2.jpeg" alt="image" width="320px" height="220px">
+                        <p>Pun-tsai was originally only practiced by the affluent of society, but as opulent gifts, bonsai later spread throughout China. The Japanese pronunciation of the word "bonsai" is derived from the Chinese word penzai. All small trees in pots or containers are referred to as bonsai in English.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/home_page/card3.jpg" alt="image" width="320px" height="220px">
+                        <p>At least 1200 years ago, the first bonsai trees are thought to have been transported from China to Japan. A well-known Noh theater production was based on a folktale from the late 1300s about a destitute samurai who gave his last three dwarf potted trees to a wandering monk to keep him warm one chilly winter night.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/home_page/kyoto.jpeg" alt="image" width="320px" height="220px">
+                        <p>A show for traditional pine miniature potted trees started to be held yearly in the capital city of Kyoto by the late 18th century. The economic impact of bonsai led Takamatsu to start cultivating dwarf pine fields as a major source of income.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/home_page/card5.jpg" alt="image"  width="320px" height="220px">
+                        <p>A gathering of Chinese art experts near the city of Osaka took place around the year 1800 to discuss contemporary trends in miniature trees. Their tiny trees were given the new name "Bonsai" to set them apart from the common hachi-no-ki that many people took care of.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/home_page/card6.jpeg" alt="image"  width="320px" height="220px">
+                        <p>Various sizes and styles were developed in the following centuries. Catalogs and books on trees, tools and pots have been published. A few early formal shows were held. Over time, bonsai began to spread around the world and underwent many developments and changes to create the bonsai we know today.</p>
+                    </div>
+                </div>
+                <!--image as an link providing an insight on Minitsu's origin-->
+                <div class="about">
+                    <a href="./HTML/Blog.html">
+                        <img src="./images/home_page/advert1.png" width="350px" height="450px">
+                    </a>
+                </div>
+            </div>      
+        </div> 
+
+        <!--horizontal line covering 94% of the width and white color
+        use of inline css-->
+        <hr style="width: 94%;height:2px;background-color: #ffffff;border-color: #ffffff;">
+        
+        <!--section with summarised view of products section-->
+        <h1 style="font-family: 'Sora'; margin-left: 100px;font-size: 70px;">Our Products</h1>
+        <!--consists of cards which can redirect to the individual product page itself-->
+        <div class="product_overview">
+            <!--
+                alt attribute is used to diplay a text as an alternative if image is not loaded
+                widthh and height is used to specify the image orientation
+            -->
+            
+            <a href="./HTML/Ficus.html">
+                <div class="ficus">
+                    <h4>Ficus</h4>
+                    <img src="./images/home_page/prod1.webp" alt="ficus_img" width="250px" height="300px" style="object-fit:cover;">
+                    <p><i>FICUS RETUSA OR GINSENG, FIG</i></p>
+                    <hr>
+                    <!-- del is referred to deleted text i.e; line over text-->
+                    <p><del>रु 4000</del></p>
+                    <p>रु 3500</p>
+                </div>
+            </a>
+            <a href="./HTML/SnowRose.html">
+                <div class="snow_rose">
+                    <h4>Snow rose</h4>
+                    <img src="./images/home_page/snowrose.webp" alt="snow_rose" width="250px" height="300px" style="object-fit:cover;">
+                    <p><i>SERISSA</i></p>
+                    <hr>
+                    <p>रु 5500</p>
+                </div>
+            </a>
+            <a href="./HTML/BoxWood.html">
+                <div class="fukien_tea">
+                    <h4>Box Wood</h4>
+                    <img src="./images/home_page/boxwood.jpeg" alt="fukien_tea_img" width="250px" height="300px" style="object-fit:cover;">
+                    <p><i>Buxus Bonsai</i></p>
+                    <hr>
+                    <p><del>रु 7000</del></p>
+                    <p>रु 6500</p>
+                </div>
+            </a>
+            <a href="./HTML//Azalea.html">
+                <div class="azalea">
+                    <h4>Azalea</h4>
+                    <img src="./images/home_page/prod4.jpeg" alt="azalea_img" width="250px" height="300px" style="object-fit:cover;">
+                    <p><i>RHODODENDRON</i></p>
+                    <hr>
+                    <p><del>रु 7000</del></p>
+                    <p>रु 6500</p>
+                </div>
+            </a>     
+        </div>
+
+        <br><br>
+        
+        <!--Button to redirect to products page-->
+        <a href="./HTML/main_products.html" class="view_more ">
+            <button>
+                View More <span style="text-align: center;">&#8964;</span>
+            </button>
+        </a>
+
+        <hr style="width: 94%;height:2px;background-color: #ffffff;border-color: #ffffff;">
+
+        <h1 style="font-family: 'Sora'; margin-left: 100px;font-size: 70px;">Blog</h1>
+
+        <!-- blog section -->
+        <div class="blog">
+            <p>
+                Our blog provies a comprehensive history of Minitsu, and How technology has affected us moving from being a community shop to an international website. 
+                <a href="./HTML/Blog.html"> <u>Learn more here.</u></a> 
+            </p>
+            <img src="./images/home_page/essence1.jpg" alt="bonsai" width="300px" height="250px">
+            <img src="./images/home_page/essence2.jpg" alt="bonsai" width="300px" height="250px">
+        </div>
+
+        <hr style="width: 94%;height:2px;background-color: #ffffff;border-color: #ffffff;">
+        <br><br>
+
+        <!-- SECOND ADVERTISEMENT  -->
+        <div class="advert2">
+            <a href="./HTML/main_products.html">
+                <img src="./images/home_page/advert2.png" width=94% height="325px">
+            </a>
+        </div>
+
+        <button onclick="redirectFunction()" id="top" title="Go to top">&#x2191;</button>
+        <script type="text/javascript" src="./JavaScript/homePage.js">
+        </script>
+
+
+        <hr style="width: 94%;height:2px;background-color: #ffffff;border-color: #ffffff;">
+
+        <!-- research section  -->
+        <h1 style="font-family: 'Sora'; margin-left: 100px;font-size: 70px;">Research</h1>
+
+        <div class="research-section">
+            <div class="research">
+                <p>
+                    Myriad of other websites inspired our website. Get a chance to check out which other website inspired Minitsu's design. 
+                    <a href="./HTML/research.html"> <u>More here.</u></a>
+                </p>
+            </div>
+
+            <div class="bonsai-empire">
+                <a href="./HTML/research.html">
+                    <img src="./images/home_page/bonsaiempire.png" alt="" height="400px" width="auto">
+                </a>
+                
+            </div>
+        </div>
+        <!-- end of research section -->
+ 
+        <hr style="width: 94%;height:2px;background-color: #ffffff;border-color: #ffffff;">
+
+        <!-- why buy from us section  -->
+        <h1 style="font-family: 'Sora'; margin-left: 100px;font-size: 70px;">Why buy from us?</h1>
+        <div class="blog">
+            <p style="width:624px;">
+                We offer more than hundreds of bonsai for purchase along with ton of other benifits. Read some of the reasons why you should buy from us.
+                <a href="./HTML/wbfu.html"> <u>Learn more here.</u></a> 
+            </p>
+
+            <video height="350px" width="auto" controls = "controls" autoplay muted>
+                <source src="./video/bonsai_video.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="./images/home_page/Bonsai-FB-3.jpeg" alt="bonsai" width="auto" height="350px"> -->
+        </div>
+        <!-- why buy from us section  -->
+
+
+        <hr style="width: 94%;height:2px;background-color: #ffffff;border-color: #ffffff;">
+
+        <!-- why buy from us section  -->
+        <h1 style="font-family: 'Sora'; margin-left: 100px;font-size: 70px;">Tips on taking care of Bonsai.</h1>
+        
+        <!-- table for a brief tips for taking care of bonsai -->
+        <div class="table-1">
+
+            <table style="border:4px; align-items:center;">
+                <tr>
+                    <td> 
+                        <img src="./images/home_page/3412909-200.png" width="150px" height="150px" class="table-img"><br><br>
+                        Checking the soil daily and watering it when it appears to be dry. Watering on routine should be avoided. </td>
+                    <td>
+                        <img src="./images/home_page/2296588.png" width="150px" height="150px" class="table-img"><br><br>
+                        Pruning should be done regularly to maintain the shape of your bonsai. Maintenance pruning includes snipping away branches, buds and leaves.</td>
+                    <td>
+                        <img src="./images/home_page/seed.png" width="150px" height="160px" class="table-img"><br><br>
+                        Large particles like volcanic rocks or stones can be mixed into the soil to improve drainage. Clay can be added to improve water retention and fertilizers should be only added after watering.</td>
+                    <td>
+                        <img src="./images/home_page/flower-pot.png" width="150px" height="130px" class="table-img"><br><br>
+                        Bonsai must be repotted every two to five years and the outer layers of root mass must be trimmed away.</td>
+                </tr>
+            </table>
+        </div>
+        
+            <hr style="width: 94%;height:2px;background-color: #ffffff;border-color: #ffffff;">
+        <!-- why buy from us section  -->
+
+        <!-- about us section -->
+        <h1 style="font-family: 'Sora'; margin-left: 100px;font-size: 70px;">About Us</h1>
+        <div class="about_us">
+            <div class="about-us-intro">
+                <p style="padding: none;">
+                    Our five member team has worked behind the scenes to make a fully functioning website. 
+                    Find more about the members of the team and contact them individually. 
+                    <a href="./HTML/aboutUs.html"><u>Learn more about the team behind Minitsu.</u></a>
+                </p>
+            </div>
+
+            <div class="our_img">
+                <img src="./images/home_page/groupImg.jpg" alt="" height="500px" width="auto">
+            </div>
+        </div>
+        
+        <!-- FOOTER CODE STARTS FROM HERE  -->
+        <div class="footer">
+
+            <div class="column1">
+                <img src="./images/General/transparent_logo.png" height="110px" width="130px">
+                <h1 style="font-family: 'Sora'; font-size: 50px; margin-top: 15px;">Minitsu.</h1>                
+            </div>
+            <div class="column2">
+                <h3 style="margin-bottom: 0px; font-family:'Poppins'; color: #ffffff;"> Join our Mailing list!</h3>
+                <form name="Subscription" onsubmit="newsletterFunction();  return false;"><!-- making sure the page doesnt scroll back to top on click -->
+                    <input type="text" name="email" placeholder="Email" >
+                    <button type="submit" id="newsletter">Subscribe</button>
+                </form>
+            </div>
+            <div class="column3">
+               <h3>Our Services</h3>
+                <a href="homePage.html">Home</a>
+                <a href="./HTML/main_products.html">Products</a>
+                <a href="./HTML/aboutUs.html">About us</a>
+                <a href="./HTML/wbfu.html">Why buy from us?</a>
+                <a href="./HTML/Blog.html">Blog</a>
+                <a href="./HTML/research.html">Research</a>
+            </div>
+            <div class="column4">
+                <h3> Follow us</h3>
+                <div class="icons">
+                    <a href="https://instagram.com/" target="_blank"><img src="./images/General/instagram.png" height="35px" width="35px"></a>
+                    <a href="https://youtube.com/" target="_blank"><img src="./images/General/youtube.png" height="35px" width="45px"></a>
+                    <a style="margin-bottom: 5px;" href="https://facebook.com/" target="_blank"><img src="./images/General/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png" height="50px" width="45px"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="./images/General/twitter.png" height="35px" width="35px"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <!-- meta tags  -->
+    <meta name="description" content="about minitsu blogs how technology has affected us and more about Minitsu">
+    <meta name="author" content="Riam Basnet Kshitiz Shrestha Sujal Maharjan Aarya Pradhan Bidur Neupane">
+    <meta name="keywords" content="How technology has affected us, About Minitsu">
+    <!-- meta tags  -->
+    
+    <style>
+        html{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins&family=Sora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/blog.css">
+    <title>Blogs</title>
+</head>
+<body>
+    
+<!-- start of nav bar -->
+<header class="navbar">
+    <!--logo in the navigation bar also redirecting to the homepage-->
+    <div class="logo">
+        <a href="../homePage.html"><img src="../images/General/logo.png" width="200px" height="65px"></a>
+    </div>
+
+    <!--individual links to navigate to different pages-->
+    <div>   
+        <ul class="center_content">
+            <li><a href="../homePage.html">Home</a></li>
+            <li><a href="main_products.html">Products</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="wbfu.html">Why buy from us?</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+        </ul>
+    </div>
+    <!--navigate to cart section and user section from navigation bar-->
+    <div class="right">
+        <ul class="right_content">
+            <li class="cart"><a href="" onclick="featureFunction(); return false;"><img src="../images/General/black_cart.png" width="23px" height="23px"></a></li>
+            <li class="user"><a href="" onclick="featureFunction(); return false;"><img src="../images/General/black_profile.png" width="28px" height="28px"></a></li>
+        </ul>
+    </div>
+</header>
+<!-- end of nav bar -->
+
+<!----Information section---->
+<div class="main-div">
+    <div class="row">
+
+        <!-- first card -->
+        <a href="../HTML/HowTechHasAffectedUs.html">
+            <div class="card">
+                <div class="img-div">
+                    <img src="../images/Blog/bonsaipic.webp" alt="">
+                </div>
+    
+                <div class="heading">
+                    <h1>How technology has affected Us?</h1>
+                </div>
+    
+                <div class="text-box">
+                    <p>
+                        According to statics, there are more than 5.1 billion active users on the internet. For better comprehension, 6 out of 10 people in the world are online users and with the advancements in technology, that number is only bound to grow. With these numbers, in bigger parts of the world, life without technology is difficult to fathom. Even a momentary breach of the internet or the power can cause irreplaceable damage to businesses and personal life. Technology has become an integral part of life and business.
+                    </p>
+                </div>
+            </div>
+        </a>
+        
+
+        <!-- second card -->
+        <a href="../HTML/MinitsuOrigin.html">
+            <div class="card">
+                <div class="img-div">
+                    <img src="../images/Blog/maxresdefault.jpeg" alt="">
+                </div>
+
+                <div class="heading">
+                    <h1>Minitsu's Origin</h1>
+                </div>
+
+                <div class="text-box">
+                    <p>
+                        In the 90s, japan went through devastating economic turmoil and a recession. While the turmoil (so-called the Lost Decades) would end in the 2000s, many unemployed salary workers had to find different lines of work. During this period, a small group of political enthusiasts in Kyoto japan got together occasionally to share their love of rearing and taking care of small trees called bonsai, and Minitsu was created.
+                    </p>
+                </div>
+            </div>
+        </a>
+        
+    </div>
+</div>
+
+
+
+
+    <!-- FOOTER CODE STARTS FROM HERE  -->
+    <div class="footer">
+        <div class="column1">
+            <img src="../images/General/transparent_logo.png" height="110px" width="130px">
+            <h1 style="font-family: 'Sora'; font-size: 50px; margin-top: 15px;">Minitsu.</h1>                
+        </div>
+        <div class="column2">
+            <h3 style="margin-bottom: 0px; font-family:'Poppins'; color: #ffffff;"> Join our Mailing list!</h3>
+            <!--JavaScript-->
+            <script type="text/javascript" src="../JavaScript/general.js">
+            </script>
+            <!--JavaScript-->
+            <form name="Subscription" onsubmit="newsletterFunction();  return false;"><!-- making sure the page doesnt scroll back to top on click -->
+                <input type="text" name="email" placeholder="Email" >
+                <button type="submit" id="newsletter">Subscribe</button>
+            </form>
+        </div>
+        <div class="column3">
+           <h3>Our Services</h3>
+            <a href="homePage.html">Home</a>
+            <a href="main_products.html">Products</a>
+            <a href="aboutUs.html">About us</a>
+            <a href="wbfu.html">Why buy from us?</a>
+            <a href="Blog.html">Blog</a>
+            <a href="research.html">Research</a>
+        </div>
+        <div class="column4">
+            <h3> Follow us</h3>
+            <div class="icons">
+                <a href="https://instagram.com/" target="_blank"><img src="../images/General/instagram.png" height="35px" width="35px"></a>
+                <a href="https://youtube.com/" target="_blank"><img src="../images/General/youtube.png" height="35px" width="45px"></a>
+                <a style="margin-bottom: 5px;" href="https://facebook.com/" target="_blank"><img src="../images/General/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png" height="50px" width="45px"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="../images/General/twitter.png" height="35px" width="35px"></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

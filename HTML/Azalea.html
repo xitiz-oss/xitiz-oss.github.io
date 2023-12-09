@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+    </style>
+    <!-- meta tags  -->
+    <meta name="description" content="Minitsu products page">
+    <meta name="author" content="Riam Basnet Kshitiz Shrestha Sujal Maharjan Aarya Pradhan Bidur Neupane">
+    <meta name="keywords" content="Azalea buy now with best price discount">
+    <!-- meta tags  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins&family=Sora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Products.css">
+    <title>Azalea</title>
+</head>
+<body>
+    <!-- start of nav bar -->
+    <header class="navbar">
+        <!--logo in the navigation bar also redirecting to the homepage-->
+        <div class="logo">
+            <a href="../homePage.html"><img src="../images/General/logo.png" width="200px" height="65px"></a>
+        </div>
+
+        <!--individual links to navigate to different pages-->
+        <div>   
+            <ul class="center_content">
+                <li><a href="../homePage.html">Home</a></li>
+                <li><a href="main_products.html">Products</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="wbfu.html">Why buy from us?</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+            </ul>
+        </div>
+        <!--navigate to cart section and user section from navigation bar-->
+        <div class="right">
+            <ul class="right_content">
+                <li class="cart"><a href="" onclick="featureFunction(); return false;"><img src="../images/General/black_cart.png" width="23px" height="23px"></a></li>
+                <li class="user"><a href="" onclick="featureFunction(); return false;"><img src="../images/General/black_profile.png" width="28px" height="28px"></a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- end of nav bar -->
+
+
+    <!--picture Div-->
+    <div class="big_image">
+        <!--big picture change image as you go on-->
+        <div class="bimg">
+            <img src="../images/Individual_products/Azalea/1.jpg" alt="" class="big_image_1" id="prodImg">
+        </div>
+            
+
+        <!-- image row -->
+        <div class="img-row">
+            <div class="smal-img-col">
+                <img src="../images/Individual_products/Azalea/2.jpg" alt="" class="mini-img">
+            </div>
+            <div class="smal-img-col">
+                <img src="../images/Individual_products/Azalea/3.jpg" alt="" class="mini-img">
+            </div>
+            <div class="smal-img-col">
+                <img src="../images/Individual_products/Azalea/4.jpg" alt="" class="mini-img">
+            </div>
+            <div class="smal-img-col">
+                <img src="../images/Individual_products/Azalea/5.jpg" alt="" class="mini-img">
+            </div>
+
+        </div>
+
+
+        <!-- JAVA SCRIPT -->
+        <script>
+
+            var prodImg = document.getElementById("prodImg");
+            var smallImg = document.getElementsByClassName("mini-img");
+
+            smallImg[0].onclick = function () {
+                prodImg.src = smallImg[0].src;
+            }
+            smallImg[1].onclick = function () {
+                prodImg.src = smallImg[1].src;
+            }
+            smallImg[2].onclick = function () {
+                prodImg.src = smallImg[2].src;
+            }
+            smallImg[3].onclick = function () {
+                prodImg.src = smallImg[3].src;
+            }
+            smallImg[4].onclick = function () {
+                prodImg.src = smallImg[4].src;
+            }
+
+        </script>
+        <!-- JAVA SCRIPT -->
+
+
+        <!--Information section-->
+        <div class="info_section">
+            <div class="rect1">
+                <p class="plantname">AZALEA(RHODODENDRON)</p>
+                <p class="originalprice" style="text-decoration: line-through;">रु 7000</p>
+                <p class="discountedprice">रु 6500</p>
+                <p class="description">Azaleas thrive in a sunny location, but shade is preferable during the hottest part of the day in the summer. To extend the life of their blossoms, azaleas should be shielded from direct sunlight and rain during flowering. </p>
+                <ul class="specifications">
+                    <b>Specifications:</b>
+                    <li class="item1">Age: 2 Years Old</li>
+                    <li class="item1">Height: About 20cm Tall</li>
+                    <li class="item1">Pot: 7"Ceramic Pot</li>
+                    <li class="item1">Level: Beginner/Intermediate</li>
+                </ul>
+
+                <!-- QUANTITY BOX -->
+                <div class="quantity-box">
+                    <p class="description">Quantity</p>
+
+                    <div class="quantity">
+                        <span class="minus">-</span>
+                        <span class="num">01</span>
+                        <span class="plus">+</span>
+                    </div>
+
+                    <script>
+                        //querySelector gets the fiorst element with class = ".plus", ".minus", ".num"
+                        const plus = document.querySelector(".plus"),
+                        minus = document.querySelector(".minus"),
+                        num = document.querySelector(".num");
+                        let a = 1;
+                        // click event triggers the function within
+                        plus.addEventListener("click", ()=>{
+                            //increment
+                            a++;
+                            //use of ternary operator(condition ? exprIfTrue : exprIfFalse)
+                            a = (a < 10) ? "0" + a : a;
+                            //innerText is used to write the dynamic text on the html document
+                            //here the number 01 is updated to 02 when plus is clicked, that is, dynamic change in content
+                            num.innerText = a;
+                            });
+                            // click event triggers the function within
+                        minus.addEventListener("click", ()=>{
+                        if(a > 1){
+                            //decrement
+                            a--;
+                            //use of ternary operator(condition ? exprIfTrue : exprIfFalse)
+                            a = (a< 10) ? "0" + a : a;
+                            //innerText is used to write the dynamic text on the html document
+                            //here the number 03 is updated to 02 when minus is clicked, that is, dynamic change in content
+                            num.innerText = a;
+                        }
+                        });
+
+                    </script>
+
+                    <div>
+                        <button type="submit" class="buttoncart" onclick="addToCart()">ADD TO CART</button>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="buttonwishlist" onclick="addWishList()">ADD TO WISHLIST</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- FOOTER CODE STARTS FROM HERE  -->
+    <div class="footer">
+        <div class="column1">
+            <img src="../images/General/transparent_logo.png" height="110px" width="130px">
+            <h1 style="font-family: 'Sora'; font-size: 50px; margin-top: 15px;">Minitsu.</h1>                
+        </div>
+        <div class="column2">
+            <h3 style="margin-bottom: 0px; font-family:'Poppins'; color: #ffffff;"> Join our Mailing list!</h3>
+            <!--JavaScript-->
+            <script type="text/javascript" src="../JavaScript/general.js">
+            </script>
+            <!--JavaScript-->
+            <form name="Subscription" onsubmit="newsletterFunction();  return false;"><!-- making sure the page doesnt scroll back to top on click -->
+                <input type="text" name="email" placeholder="Email" >
+                <button type="submit" id="newsletter">Subscribe</button>
+            </form>
+        </div>
+        <div class="column3">
+           <h3>Our Services</h3>
+            <a href="homePage.html">Home</a>
+            <a href="main_products.html">Products</a>
+            <a href="aboutUs.html">About us</a>
+            <a href="wbfu.html">Why buy from us?</a>
+            <a href="Blog.html">Blog</a>
+            <a href="research.html">Research</a>
+        </div>
+        <div class="column4">
+            <h3> Follow us</h3>
+            <div class="icons">
+                <a href="https://instagram.com/" target="_blank"><img src="../images/General/instagram.png" height="35px" width="35px"></a>
+                <a href="https://youtube.com/" target="_blank"><img src="../images/General/youtube.png" height="35px" width="45px"></a>
+                <a style="margin-bottom: 5px;" href="https://facebook.com/" target="_blank"><img src="../images/General/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png" height="50px" width="45px"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="../images/General/twitter.png" height="35px" width="35px"></a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

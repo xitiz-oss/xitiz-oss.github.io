@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box ;
+	font-family: 'poppins' sans-serif;
+}
+body
+{
+	background: whitesmoke;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	min-height: 100px;
+}
+.container
+{
+   position: relative;
+   width: 100%;
+   max-width: 800px;
+   min-height: 800px;
+   margin: 50px;
+   background: whitesmoke;
+   display: grid;
+   grid-template-columns:1fr 2fr ;
+   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left_side
+{
+	position: relative;
+	background: #003147;
+	padding: 40px;
+}
+.profileText
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profileText h1
+{
+	color: whitesmoke;
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.4em;
+}
+.profileText h1 span 
+{
+	font-size: 0.8em;
+	font-weight:300 ;
+}
+.contactinfo
+{
+    padding-top: 20px;	
+}
+.title
+{
+	color: whitesmoke;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.contactinfo ul
+{
+   position: relative;	
+}
+.contactinfo ul li
+{
+	position:relative ;
+	list-style: none;
+	margin: 10px 0;
+	cursor: pointed;
+}
+
+.contactinfo ul li .text
+{
+	color:#F8EEE7 ;
+	font-weight: 300;
+}
+.contactinfo.education li
+{
+  margin-bottom: 15px;	
+}
+.contactinfo  ul li  h3
+{
+	color: #F4DECB;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.contactinfo.education h3
+{
+	color: #C09F80;
+	font-weight: 500;
+}
+.contactinfo.education h4
+{
+	color: black;
+	font-weight: 300;
+	padding-top: 10px;
+}
+.contactinfo.education h5
+{
+	color:black;
+	font-weight: 300;
+}
+
+
+.container .right_side
+{
+	position: relative;
+	background: whitesmoke;
+	padding: 40px;
+}
+.contactinfo.education h2
+{
+	color: black;
+}

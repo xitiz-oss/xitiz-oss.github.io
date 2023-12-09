@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="../CSS/sujal_portfolio.css">
+</head>
+<body>
+<div class="container">
+    <div class="sujal">
+    <nav>
+        <ul>
+            <li><a href="sujal_portfolio.html">HOME</a></li>
+            <li><a href="sujal_ContactMe.html">CONTACT ME</a></li>
+        </ul>
+    </nav>
+    <div class="intro">
+        <h1>Hello. I'm Sujal <span class="caste">Maharjan</span></h1>
+        <p class="whoami">And I'm a <span id="typing"></span></h1></p>
+        <a href="sujal_cv.html">VIEW CV</a>
+    </div>
+    
+	<div class="image">
+		<img src="../images/Portfolio/sujalmaharjan/Sujal.png">
+	</div>
+    
+</div>
+</div>
+<script>
+    const words = ["Student"];
+let i = 0;
+let timer;
+
+function typingEffect() {
+	let word = words[i].split("");
+	var loopTyping = function() {
+		if (word.length > 0) {
+			document.getElementById('typing').innerHTML += word.shift();
+		} else {
+			deletingEffect();
+			return false;
+		};
+		timer = setTimeout(loopTyping, 150);
+	};
+	loopTyping();
+};
+
+function deletingEffect() {
+	let word = words[i].split("");
+	var loopDeleting = function() {
+		if (word.length > 0) {
+			word.pop();
+			document.getElementById('typing').innerHTML = word.join("");
+		} else {
+			if (words.length > (i + 1)) {
+				i++;
+			} else {
+				i = 0;
+			};
+			typingEffect();
+			return false;
+		};
+		timer = setTimeout(loopDeleting, 100);
+	};
+	loopDeleting();
+};
+typingEffect();
+</script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+    </style>
+    <!-- meta tags  -->
+    <meta name="description" content="Minitsu online bonsai website based in Japan About Us page .">
+    <meta name="description" content="minitsu web developers company members">
+    <meta name="author" content="Riam Basnet Kshitiz Shrestha Sujal Maharjan Aarya Pradhan Bidur Neupane">
+    <meta name="keywords" content="Minitsu About Us Page">
+    <!-- meta tags  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins&family=Sora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/aboutUs.css">
+
+    <script src="../JavaScript/aboutus.js"></script>
+
+    <title>About Us</title>
+</head>
+<body>
+    <!-- start of nav bar -->
+    <header class="navbar">
+        <!--logo in the navigation bar also redirecting to the homepage-->
+        <div class="logo">
+            <a href="../homePage.html"><img src="../images/General/logo.png" width="200px" height="65px"></a>
+        </div>
+
+        <!--individual links to navigate to different pages-->
+        <div>   
+            <ul class="center_content">
+                <li><a href="../homePage.html">Home</a></li>
+                <li><a href="main_products.html">Products</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="wbfu.html">Why buy from us?</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+            </ul>
+        </div>
+        <!--navigate to cart section and user section from navigation bar-->
+        <div class="right">
+            <ul class="right_content">
+                <li class="cart"><a href="" onclick="featureFunction(); return false;"><img src="../images/General/black_cart.png" width="23px" height="23px"></a></li>
+                <li class="user"><a href="" onclick="featureFunction(); return false;"><img src="../images/General/black_profile.png" width="28px" height="28px"></a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- end of nav bar -->
+
+    <!-- ABOUT US SECTION -->
+    <div class="heading">
+        <h1 style="font-size:50px;">
+                About Us
+        </h1>
+    </div>
+    <!-- ABOUT US SECTION -->
+
+    <div>
+        <div class="col1">
+            <!-- IMG 1 -->
+            <a href="riam-home.html">
+                <div class="rect1">
+                    <img src="../images/About Us/riam.jpg" alt="">
+                </div>
+            </a>
+            <!-- IMG 2 -->
+            <a href="kshitiz_portfolio.html">
+                <div class="rect1">
+                    <img src="../images/About Us/kshitiz.jpg" alt="">
+                </div>
+            </a>
+            <!-- IMG 3 -->
+            <a href="sujal_portfolio.html">
+                <div class="rect1">
+                    <img src="../images/About Us/sujal.jpg" alt="">
+                </div>
+            </a>
+        </div>
+
+        <!-- name big name -->
+        <div class="names">
+            <div class="name-area">
+                <span class="name"><a href="riam-home.html">Riam Basnet</a></span>
+                <span class="name"><a href="kshitiz_portfolio.html">Kshitiz Shrestha</a></span>
+                <span class="name"><a href="../portfolios/sujalmaharjan/HTML/portfolio.html">Sujal Maharjan</a></span>
+            </div>
+    
+            <div class="pos-area">
+                <span class="position">web developer</span>
+                <span class="position">web developer</span>
+                <span class="position">web developer</span>
+            </div>
+        </div>
+        
+
+        <!-- SECOND ROW OF NAMES AND PICTURES -->
+        <div class="col1">
+            <!-- IMG 1 -->
+            <a href="aarya_portfolio.html">
+                <div class="rect1">
+                    <img src="../images/About Us/aarya.jpg" alt="">
+                </div>
+            </a>
+            <!-- IMG 2 -->
+            <a href="bidur_portfolio.html">
+                <div class="rect1">
+                    <img src="../images/About Us/bidur.jpg" alt="">
+                </div>
+            </a>
+        </div>
+
+        <!-- NAMES -->
+        <div class="names">
+            <div class="name-area">
+                <span class="name"><a href="aarya_portfolio.html">Aarya Pradhan</a></span>
+                <span class="name"><a href="bidur_portfolio.html">Bidur Neupane</a></span>
+            </div>
+    
+            <div class="pos-area">
+                <span class="position">web developer</span>
+                <span class="position">web developer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEEDBACK SECTION -->
+    <div class="heading" style="padding-top: 20px;">
+        <h1 style="font-size:50px; margin: 10px;">
+                Feedback
+        </h1>
+    </div>
+
+    <!-- feedback section -->
+    <div class="feedback-area">
+        <div>
+            <img src="" alt="" class="fed-img">
+        </div>
+
+        <span class="S1">We'd love to hear from you!</span>
+
+        <form action="" name = "feedback-form" class="form" id="form" onsubmit="check()">
+            <div class="ind-div">
+                Preffered Name: <br>
+                <input type="text" name="name" class="input1"> <br>
+            </div>
+            
+            <div class="ind-div">
+                Email: <br>
+                <input type="email" name="email" class="input1"> <br>
+            </div>
+            
+            <div class="ind-div">
+                Your Suggestion: <br>
+                <textarea name="feedback" id="feedback" cols="15" rows="8" style="width: 887px; height: 457px; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"></textarea> <br>
+            </div>
+            
+            <div>
+                <button type="submit" value="Send" class="button1"> SUBMIT </button>
+            </div>
+        </form>
+    </div>
+    <!-- feedback section -->
+
+    <!-- CONTACT US SECTION -->
+    <div class="heading" style="padding-top: 20px;">
+        <h1 style="font-size:50px; margin: 10px;">
+                Contact Us
+        </h1>
+    </div>
+
+    <div class="con-area">
+        <div class="generalBusiness">
+            <pre> 
+    <u>General Business Enquiries</u>
+    For general business enquires please email <a href="#" class="email">office@Minitsu.org</a>
+    
+    <u>Postal Address</u>
+    Minitsu Limited
+    Hanaseharachicho
+    Sakyo Ward  
+    Kyoto 
+    Japan
+    
+    
+    <span style="color: red;">Company Number:</span> 786578
+    <span style="color: red;">Registered in:</span> Japan
+    <span style="color: red;">Principal Office:</span> Minitsu Limited, 2088 Iwakura Hataedacho, Sakyo Ward, Kyoto, 
+    606-0015, Japan
+            </pre>
+        </div>
+        
+    </div>
+
+    <!-- FOOTER CODE STARTS FROM HERE  -->
+    <div class="footer">
+
+        <div class="column1">
+            <img src="../images/General/transparent_logo.png" height="110px" width="130px">
+            <h1 style="font-family: 'Sora'; font-size: 50px; margin-top: 15px;">Minitsu.</h1>                
+        </div>
+        <div class="column2">
+            <h3 style="margin-bottom: 0px; font-family:'Poppins'; color: #ffffff;"> Join our Mailing list!</h3>
+            <script type="text/javascript" src="../JavaScript/aboutus.js">
+            </script>
+            <form name="Subscription" onsubmit="newsletterFunction();  return false;"><!-- making sure the page doesnt scroll back to top on click -->
+                <input type="text" name="email" placeholder="Email" >
+                <button type="submit" id="newsletter">Subscribe</button>
+            </form>
+        </div>
+        <div class="column3">
+           <h3>Our Services</h3>
+            <a href="homePage.html">Home</a>
+            <a href="main_products.html">Products</a>
+            <a href="aboutUs.html">About us</a>
+            <a href="wbfu.html">Why buy from us?</a>
+            <a href="Blog.html">Blog</a>
+            <a href="research.html">Research</a>
+        </div>
+        <div class="column4">
+            <h3> Follow us</h3>
+            <div class="icons">
+                <a href="https://instagram.com/" target="_blank"><img src="../images/General/instagram.png" height="35px" width="35px"></a>
+                <a href="https://youtube.com/" target="_blank"><img src="../images/General/youtube.png" height="35px" width="45px"></a>
+                <a style="margin-bottom: 5px;" href="https://facebook.com/" target="_blank"><img src="../images/General/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png" height="50px" width="45px"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="../images/General/twitter.png" height="35px" width="35px"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

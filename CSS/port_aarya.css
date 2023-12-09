@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+.header
+{
+	min-height: 800px;
+	width: 100%;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(../images/Portfolio/aarya/background.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+ nav
+ {
+ 	display: flex;
+ 	width: 90%;
+ 	margin: auto;
+ 	padding: 20px 0;
+ 	align-items: center;
+ 	justify-content: space-between;
+ }
+ .hero
+ {
+ 	flex:1;
+ 	text-align: right;
+ }
+ .hero  ul li
+ {
+ 	display: inline-block;
+ 	list-style: none;
+ 	padding: 8px 12px;
+ 	position: relative;
+ }
+ .hero  ul li a 
+ {
+ 	text-decoration: none;
+ 	color: #fff;
+ 	font-size: 13px;
+ }
+
+ .hero ul li::after
+ {
+ 	content: '';
+ 	width: 0%;
+ 	height: 2px;
+ 	background: #f44336;
+ 	display: block;
+ 	margin: auto;
+ 	transition: 0.5s;
+ }
+
+ nav ul li:hover::after
+ {
+ 	width: 100%;
+ }
+.detail
+ {
+ 	margin-left: 8%;
+ 	margin-top: 10%;
+ }
+ /*images */
+ .image
+ {
+	float: right;
+	padding-left:30px ;
+	padding-right:50px ;
+	margin-top: -60px;
+ }
+.detail h1 
+ {
+ 	font-size:60px;
+ 	color:#D7CEC7;
+ 	margin-bottom: 20px;
+ }
+ span 
+ {
+ 	color:#76323F;
+ }
+.detail p 
+ {
+ 	font-size: 30px;
+ 	color:#C09F80;
+ 	line-height:30px;
+ }
+
+.detail a 
+ {
+  background:black;
+  padding:12px 34px;
+  text-decoration: none;
+  font-size: 20px;
+  color: whitesmoke;
+  display: inline-block;
+  margin: 30px 0;
+  border: 1px solid whitesmoke;
+  position: relative;
+ 	cursor: pointer;
+ }
+ .detail a:hover
+ {
+ 	border: 1px solid #f8EEE7;
+ 	background: #f8EEE7;
+ 	transition: 1s;
+ }
+ .Header
+ {
+    min-height: 800px;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.detail h2
+{
+    font-size: 40px;
+}
+
+/*FOOTER*/
+.footer
+{
+    background:black;
+    height: 80px;
+}
+.footer .footer-content
+{
+  border: 0.5px solid whitesmoke;
+  height: 70px;
+}
+.icons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icons a{
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.icons a:hover{
+    transform: translateY(-3px);
+}
+
+.icons:active{
+    opacity: 0.5;
+}
+ 
+ 

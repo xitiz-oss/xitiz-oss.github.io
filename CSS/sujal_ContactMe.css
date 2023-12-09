@@ -1,0 +1,26 @@
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.ttf');
+}
+*{
+    font-family: 'Poppins';
+}
+.contactForm{
+    width:30%;
+    padding:5%;
+    background: #fff;
+    margin: auto;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox input, .contactForm .inputBox textarea{
+    width:100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+}
+

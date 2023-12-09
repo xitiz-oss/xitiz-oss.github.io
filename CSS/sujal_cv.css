@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: 'Lora';
+    src: url('../font/VanioTrial-RegularItalic.ttf');
+}
+@font-face {
+    font-family: 'Loraregular';
+    src: url('../font/VanioTrial-Regular.ttf');
+}
+/*The whole CV*/
+.container{
+    background-color: rgb(245, 234, 234);
+    width:700px;
+    height:925px;
+    margin: auto;
+    border: 1px solid black;
+}
+/*This is for div for blank space on left side*/
+.leftcontent{
+    background-color: blue;
+    width:5%;
+    height:925px;
+    float:left;
+}
+.leftwhite1{
+    background-color: white;
+    width:100%;
+    height:60px;
+}
+.leftorange{
+    background-color:#ebcbbb;
+    width:100%;
+    height:210px;
+}
+.leftwhite2{
+    background-color: white;
+    width:100%;
+    height:655px;
+}
+/*The green division*/
+
+.middlecontent{
+    background-color: #6b9999;
+    width:35%;
+    height:925px;
+    float:left;
+}
+.topofimage{
+    width:100%;
+    height:60px;
+}
+.image{
+    width:90%;
+    height:210px;
+    background-color: white;
+}
+.profile, .contact {
+    width:100%;
+    height:350px;
+    color:white;
+    font-family: 'Lato';
+    font-size: 20px;
+    padding-top: 15%;
+    padding-left: 7%;
+}
+.profile li{
+    list-style: none;
+    font-family: 'Loraregular';
+}
+.aboutme{
+    font-size: 18px;
+    padding-top:2%;
+    font-family: 'Lora';
+    width:90%;
+    height:300px;
+}
+.aboutme li{
+    list-style: none;
+    padding:2%;
+}
+.contact{
+    height:255px;
+    padding:5%;
+}
+.contact li{
+    list-style: none;
+    font-family: 'Loraregular';
+    font-size: 16px;
+    padding-left: 2%;
+    margin-left: 8%;
+}
+.phone::marker{
+    content:"\2706";
+    font-size:160%;
+    width:100%;
+    color: white;
+}
+.email::marker{
+    content:"\2709";
+    font-size:160%;
+    width:100%;
+    color: white;
+}
+.location::marker{
+    content:"\f59f";	
+   
+    font-size:160%;
+    width:100%;
+    color: white;
+}
+/*The right content*/
+.rightcontent{
+    width:60%;
+    height:925px;
+    background-color: white;
+    float:left;
+}
+.rightwhite1{
+    height:60px;
+    width:100%;
+    background-color: white;
+}
+.rightorange{
+    width:100%;
+    background-color:#ebcbbb;
+    height:210px;
+}
+.nameandstudent{
+    background-color:#ebcbbb;
+    font-size: 30px;
+    margin-top:10%;
+    width:90%;
+    height:100px;
+    float:right;
+    
+}
+.name{
+    width:50%;
+    height:60px;
+    background-color: #ebcbbb;
+    font-size: 24px;
+    font-family: 'Lato';
+    font-weight: bold;
+}
+.student{
+    width:50%;
+    height:40px;
+    background-color:#ebcbbb;
+    font-family: 'Lora';
+    font-size:18px;
+    font-style: italic;
+    padding-top: 5%;
+}
+
+/*education, language, computer skills and volunteer experience*/
+.rightwhite2{
+    height:680px;
+    width:100%;
+    
+}
+.education{
+    height:200px;
+    width:90%;
+    margin-top:50px;
+    float:right;
+    font-family: 'Lato';
+    font-size: 20px;
+}
+.education li, .language li, .computerskills li{
+    list-style: none;
+    padding-left: 5%;
+}
+.biglist li::marker{
+    content: "\2771";
+    font-size:120%;
+    height:200px;
+    color:#5a8c90;
+    
+}
+.educationcontent{
+    width:100%;
+    float:right;
+    height: 200px;
+}
+.educationcontent h1{
+    font-size: 17px;
+    font-family: 'Lora';
+    padding-top: 4%;
+}
+.educationcontent h2, .language h2, .computerskills h2{
+    font-size:15px;
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: lighter;
+}
+.language{
+    height: 100px;
+    width:90%;
+    
+    margin-top:50px;
+    float:right;
+    font-family: 'Lato';
+    font-size: 20px;
+}
+.language h2, .computerskills h2{
+    padding-top:2%;
+    font-style:normal;
+}
+.computerskills{
+    height: 150px;
+    width:90%;
+    
+    margin-top:50px;
+    float:right;
+    font-family: 'Lato';
+    font-size: 20px;
+}
+
+/*Text Styling*/

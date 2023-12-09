@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Kohinoor';
+    src: url(../font/FontsFree-Net-KohinoorTelugu-Medium\ \(2\).ttf);
+}
+
+*{
+    margin: 0;
+    font-family:'Kohinoor','Times New Roman', 'Times, serif' ;
+}
+
+body{
+    background-color: #FFFFFA;
+    background-image: url(../images/Portfolio/riam/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* nav bar */
+nav{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color:#FFFFFA;
+    width: 100%;
+    height: 88px;
+    /* height: 10.71%; */
+}
+
+nav a{
+    font-size: 24px;
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Kohinoor','Times New Roman', 'Times, serif';
+    font-weight: lighter;
+}
+/* 1440 821px */
+
+nav ul{
+    margin-right: 114px;
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 30px 50px;
+}
+/* nav bar */
+
+
+
+/* main body text */
+
+.textbox{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.hello{
+    /* width: 538px; */
+    width: 37.36%;
+    height: 196px;
+    /* padding-top: 345px; */
+    padding-top: 24%;
+    /* padding-left: 126px; */
+    padding-left: 8.75%;
+    color: black;
+    /* font-size: 62px; */
+    font-size: 4.25vw;
+}
+
+.wd{
+    /* width: 538px; */
+    width: 37.36%;
+    height: 196px;
+    /* padding-top: 345px; */
+    padding-top: 40px;
+    /* padding-left: 126px; */
+    padding-left: 8.8%;
+    /* font-size: 62px; */
+    font-size: 2.5vw;
+
+    /* padding-top: 2.8%; */
+    /* font-size: 36px; */
+
+}

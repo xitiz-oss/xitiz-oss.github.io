@@ -1,0 +1,89 @@
+body{
+    background-color: #696969;
+    
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+header li{
+    margin: 20px 40px;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    transition: transform 0.2s ease;
+}
+
+header a:hover{
+    font-weight: bold;
+    color: #000000;
+}
+
+.info{
+    color: #000000;
+    font-family: 'Poppins',sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 16px;
+}
+
+.desc{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.desc p{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.desc span{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.info ol,ul,h1{
+    padding-left: 50px;
+
+}
+
+.info h1{
+    font-size: 44px;
+    margin: 0;
+    margin-left: 80px;
+    position: absolute;
+    left: -6px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 2px 20px;
+}
+
+.info h1:before{
+    content: '';
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background-color: #212121;
+    left: 10px;
+    bottom: -24px;
+    transform: rotate(-45deg);
+    z-index:-1;
+}
+
+.info li{
+    font-size: 20px;
+
+}

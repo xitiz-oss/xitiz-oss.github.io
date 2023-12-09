@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <!--internal css-->
+    <style>
+        html{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <!-- meta tags  -->
+    <meta name="description" content="Online website to buy bonsai plants from Minitsu.">
+    <meta name="author" content="Riam Basnet Kshitiz Shrestha Sujal Maharjan Aarya Pradhan Bidur Neupane">
+    <meta name="keywords" content="Minitsu Products page with all bonsai products available from Japan.">
+    <!-- meta tags  -->
+
+    <!--importing fonts from google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins&family=Sora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <!--linking the html and css file-->
+    <link rel="stylesheet" href="../CSS/main_products.css">
+    
+</head>
+<body>
+    <!--making the navigation bar-->
+    <header class="navbar">
+        <!--logo in the navigation bar also redirecting to the homepage-->
+        <div class="logo">
+            <a href="../homePage.html"><img src="../images/General/logo.png" width="200px" height="65px"></a>
+        </div>
+
+        <!--individual links to navigate to different pages-->
+        <div>   
+            <ul class="center_content">
+                <li><a href="../homePage.html">Home</a></li>
+                <li><a href="main_products.html">Products</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="wbfu.html">Why buy from us?</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+            </ul>
+        </div>
+        <!--navigate to cart section and user section from navigation bar-->
+        <div class="right">
+            <ul class="right_content">
+                <li class="cart"><a href="" onclick="featureFunction(); return false;"><img src="../images/General/black_cart.png" width="23px" height="23px"></a></li>
+                <li class="user"><a href="" onclick="featureFunction(); return false;"><img src="../images/General/black_profile.png" width="28px" height="28px"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="content" style="margin-left: 0%;">
+        <div class="filter">
+            <h1 style="font-family: 'Sora'; margin-left: 100px;font-size: 50px;">Filter</h1>
+            <hr style="width: 94%;height:1px;background-color: #000000;border-color: #000000;">
+            <p style="font-family: 'Poppins',sans-serif;margin-left:15px;font-size: 24px;">By Price</p>
+            <form onsubmit="">
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>Under रु 1000</label><br>
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>रु 1000 - रु 4000</label><br>
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>रु 4000 - रु 7000</label><br>
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>रु 7000 - रु 9000</label><br>
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>रु 9000 - रु 12,000</label>
+            </form>
+            <br>
+            <hr style="width: 94%;height:1px;background-color: #000000;border-color: #000000;">
+            <p style="font-family: 'Poppins',sans-serif;margin-left:15px;font-size: 24px;">By Level</p>
+            <form onsubmit="">
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>Beginner</label><br>
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>Intermediate</label><br>
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>Advance</label>
+            </form>
+            <br>
+            <hr style="width: 94%;height:1px;background-color: #000000;border-color: #000000;">
+            <p style="font-family: 'Poppins',sans-serif;margin-left:15px;font-size: 24px;">By Age</p>
+            <form onsubmit="">
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>1 - 3 year old</label><br>
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>3 - 6 year old</label><br>
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>7 - 9 year old</label>
+            </form>
+            <br>
+            <hr style="width: 94%;height:1px;background-color: #000000;border-color: #000000;">
+            <p style="font-family: 'Poppins',sans-serif;margin-left:15px;font-size: 24px;">By Height</p>
+            <form onsubmit="">
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>20cm - 40cm tall</label><br>
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>50cm - 70cm tall</label><br>
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>80cm - 90cm tall</label>
+            </form>
+            <br>
+            <hr style="width: 94%;height:1px;background-color: #000000;border-color: #000000;">
+            <p style="font-family: 'Poppins',sans-serif;margin-left:15px;font-size: 24px;">By Category</p>
+            <form onsubmit="">
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>Discounted items</label><br>
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>Best Seller</label><br>
+                <input type="checkbox" name="check" onclick="featureFunction();  return false;"><label>Today's deal</label>
+            </form>
+            <br><br>
+        </div>
+
+        <div class="product_gallery">
+            <div class="first_row">
+                <a href="SnowRose.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/1.jpg" width="330px" height="250px">
+                        
+                        <h4>Snow rose<i>(SERISSA)</i></h4>
+                        
+                        <p>The fine oval, shiny green leaves of the Serissa are characteristic of an evergreen. It is also known as a tree of thousand stars or Japanese boxthorn.</p>
+                        <p style="font-size: 24px;text-align: center;color: #000000;font-family: 'Oswald',sans-serif;">रु 5500</p>
+                    </div>
+                </a>
+                
+                <a href="BoxWood.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/2.jpg" width="330px" height="250px">
+                        
+                        <h4>Box Wood<i>(BUXUS)</i></h4>
+                        
+                        <p>In nature the boxwood often grows with twisted trunks and branches. Buxus x 'Green Velvet' is considered as one of the best boxwood bonsai.</p>
+                        <p style="font-size: 24px;text-align: center;font-family: 'Oswald',sans-serif;"><del style="color: #FF0000;">रु 7000</del></p>
+                        <p style="font-size: 24px;text-align: center;color: #009c00;font-family: 'Oswald',sans-serif;">रु 6500</p>
+                    </div>
+                </a>
+
+                <a href="Olive.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/3.jpg" width="330px" height="250px">
+                        
+                        <h4>Olive<i>(OLEA EUROPEA)</i></h4>
+                        
+                        <p>It comes from Israel where people realized that it is very easy to grow from stem cuttings, which resulted in mass production of the tree.</p>
+                        <p style="font-size: 24px;text-align: center;font-family: 'Oswald',sans-serif;"><del style="color: #FF0000;">रु 8000</del></p>
+                        <p style="font-size: 24px;text-align: center;color: #009c00;font-family: 'Oswald',sans-serif;">रु 7600</p>
+                    </div>
+                </a>
+             
+            </div>
+
+            <div class="second_row">
+                <a href="Sweet_Plum.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/4.jpg" width="330px" height="250px">
+                        
+                        <h4>Sweet Plum<i>(SAGERETIA THEEZANS)</i></h4>
+                        
+                        <p>Sweet plum leaves are tiny, oval, light green, and glossy. Late in the summer, panicles of yellowish white flowers and little blue fruits may appear.</p>
+                        <p style="font-size: 24px;text-align: center;font-family: 'Oswald',sans-serif;"><del style="color: #FF0000;">रु 6000</del></p>
+                        <p style="font-size: 24px;text-align: center;color: #009c00;font-family: 'Oswald',sans-serif;">रु 5000</p>
+                    </div>
+                </a>
+
+                <a href="Ficus.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/5.jpg" width="330px" height="250px">
+                        
+                        <h4>Ficus<i>(FICUS RETUSA)</i></h4>
+                        
+                        <p>It is an interesting-looking plant for a bonsai, with narrow elevated roots that swell into a potbelly trunk and narrows at the branches before spreading out to the crown.</p>
+                        <p style="font-size: 24px;text-align: center;font-family: 'Oswald',sans-serif;"><del style="color: #FF0000;">रु 4000</del></p>
+                        <p style="font-size: 24px;text-align: center;color: #009c00;font-family: 'Oswald',sans-serif;">रु 3500</p>
+                    </div>
+                </a>
+
+                
+                <a href="Cotoneaster.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/6.jpg" width="330px" height="250px">
+                        
+                        <h4>Cotoneaster</h4>
+                        
+                        <p>Small plants known as cotoneasters can develop into trees, shrubs, or ground covers. They are hard, have a beautiful growth habit and are very widely available.</p>
+                        <p style="font-size: 24px;text-align: center;font-family: 'Oswald',sans-serif;"><del style="color: #FF0000;">रु 5000</del></p>
+                        <p style="font-size: 24px;text-align: center;color: #009c00;font-family: 'Oswald',sans-serif;">रु 4500</p>
+                    </div>
+                </a>
+
+            </div>
+            
+            <div class="third_row">
+                <a href="Azalea.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/7.jpg" width="330px" height="250px">
+                        
+                        <h4>Azalea<i>(RHODODENDRON)</i></h4>
+                        
+                        <p>Azaleas thrive in a sunny location, but shade is preferable during the hottest part of the day in the summer.</p>
+                        <p style="font-size: 24px;text-align: center;font-family: 'Oswald',sans-serif;"><del style="color: #FF0000;">रु 7000</del></p>
+                        <p style="font-size: 24px;text-align: center;color: #009c00;font-family: 'Oswald',sans-serif;">रु 6500</p>
+                    </div>
+                </a>
+
+                <a href="Carmona.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/8.jpg" width="330px" height="250px">
+                        
+                        <h4>Fukien Tea<i>(CARMONA)</i></h4>
+                        
+                        <p>The Fukien Tea tree is found in parts of Japan, Indonesia, Taiwan, and Australia, and many other countries but its name comes from where it originally came from—Fukien, also known as Fujian, in China.</p>
+                        <p style="font-size: 24px;text-align: center;color: #000000;font-family: 'Oswald',sans-serif;">रु 3000</p>
+                    </div>
+                </a>
+        
+                <a href="DwarfJade.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/9.jpg" width="330px" height="250px">
+                        
+                        <h4>Dwarf Jade<i>(PORTULACARIA)</i></h4>
+                        
+                        <p>The Dwarf Jade is native to the dry regions of South Africa and widespread in Mozambique, Eswatini and in the South African provinces of Eastern Cape and KwaZulu-Natal. It is a fleshy, soft, woody small tree that grows up to 3m.</p>
+                        <p style="font-size: 24px;text-align: center;color: #000000;font-family: 'Oswald',sans-serif;">रु 5000</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="fourth_row">
+
+                <a href="Citrus.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/10.jpg" width="330px" height="250px">
+                        
+                        <h4>Citrus</h4>
+                        
+                        <p>The different citrus species are subtropical trees native to China but they are planted in many countries with warm climates for their delicious fruits and as ornamental plants.</p>
+                        <div class="price">
+                            <p style="font-size: 24px;color: #000000;text-align: center;font-family: 'Oswald',sans-serif;">रु 1000</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="Bamboo.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/11.jpg" width="330px" height="250px">
+                        
+                        <h4>Bamboo</h4>
+                        
+                        <p>Bamboo is a common plant among bonsai fans for use as accent plants as well as for constructing forests, despite the fact that its ability to be fashioned as a "tree" is restricted.</p>
+                        <p style="font-size: 24px;text-align: center;font-family: 'Oswald',sans-serif;"><del style="color: #FF0000;">रु 900</del></p>
+                        <p style="font-size: 24px;text-align: center;color: #009c00;font-family: 'Oswald',sans-serif;">रु 750</p>
+                    </div>
+                </a>
+
+                <a href="Premna.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/12.jpg" width="330px" height="250px">
+                        
+                        <h4>Premna</h4>
+                        
+                        <p>Premna is a genus of approximately 200 tropical or subtropical tree and shrub species which belong to the min family and are widespread in Africa, Southeast Asia and northern Australia.</p>
+                        <p style="font-size: 24px;text-align: center;font-family: 'Oswald',sans-serif;"><del style="color: #FF0000;">रु 1100</del></p>
+                        <p style="font-size: 24px;text-align: center;color: #009c00;font-family: 'Oswald',sans-serif;">रु 1000</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="fifth_row">
+                <a href="JapaneseHolly.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/13.jpg" width="330px" height="250px">
+                        
+                        <h4>Japanese Holly<i>(ILEX CRETANA)</i></h4>
+                        
+                        <p>Japanese Holly is an evergreen shrub with small leaves, tiny white flowers and black fruits which tolerates constant pruning very well.</p>
+                        <p style="font-size: 24px;text-align: center;font-family: 'Oswald',sans-serif;"><del style="color: #FF0000;">रु 1200</del></p>
+                        <p style="font-size: 24px;text-align: center;color: #009c00;font-family: 'Oswald',sans-serif;">रु 1125</p>
+
+                    </div>
+                </a>
+
+                <a href="BrazillianRainTree.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/14.jpg" width="330px" height="250px">
+                        
+                        <h4>Brazillian Rain Tree</h4>
+                        
+                        <p>As the name suggests, the jungles of Brazil are home to the Brazillian Rain Tree. When it goes dark, its compound leaves fold up; when the light comes on, they unfold once more.</p>
+
+                        <p style="font-size: 24px;text-align: center;font-family: 'Oswald',sans-serif;"><del style="color: #FF0000;">रु 2000</del></p>
+                        <p style="font-size: 24px;text-align: center;color: #009c00;font-family: 'Oswald',sans-serif;">रु 1500</p>
+                    </div>
+                </a>
+    
+                <a href="BrushCherry.html">
+                    <div class="content_product">
+                        <img src="../images/Main_products/15.jpg" width="330px" height="250px">
+                        
+                        <h4>Brush Cherry</h4>
+                        
+                        <p>The Brush Cherry is an evergreen tree or shrub. The small dark green lance-shaped leaves are firm, glossy and are arranged in opposite leaf pairs. In spring, the Brush Cherry may bear small puffy white flowers.</p>
+                        <p style="font-size: 24px;text-align: center;font-family: 'Oswald',sans-serif;"><del style="color: #FF0000;">रु 1500</del></p>
+                        <p style="font-size: 24px;text-align: center;color: #009c00;font-family: 'Oswald',sans-serif;">रु 1475</p>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- FOOTER CODE STARTS FROM HERE  -->
+    <div class="footer">
+
+        <div class="column1">
+            <img src="../images/General/transparent_logo.png" height="110px" width="130px">
+            <h1 style="font-family: 'Sora'; font-size: 50px; margin-top: 15px;">Minitsu.</h1>                
+        </div>
+        <div class="column2">
+            <h3 style="margin-bottom: 0px; font-family:'Poppins'; color: #ffffff;"> Join our Mailing list!</h3>
+            <script type="text/javascript" src="../JavaScript/general.js">
+            </script>
+            <form name="Subscription" onsubmit="newsletterFunction();  return false;"><!-- making sure the page doesnt scroll back to top on click -->
+                <input type="text" name="email" placeholder="Email" >
+                <button type="submit" id="newsletter">Subscribe</button>
+            </form>
+        </div>
+        <div class="column3">
+           <h3>Our Services</h3>
+            <a href="homePage.html">Home</a>
+            <a href="main_products.html">Products</a>
+            <a href="aboutUs.html">About us</a>
+            <a href="wbfu.html">Why buy from us?</a>
+            <a href="Blog.html">Blog</a>
+            <a href="research.html">Research</a>
+        </div>
+        <div class="column4">
+            <h3> Follow us</h3>
+            <div class="icons">
+                <a href="https://instagram.com/" target="_blank"><img src="../images/General/instagram.png" height="35px" width="35px"></a>
+                <a href="https://youtube.com/" target="_blank"><img src="../images/General/youtube.png" height="35px" width="45px"></a>
+                <a style="margin-bottom: 5px;" href="https://facebook.com/" target="_blank"><img src="../images/General/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png" height="50px" width="45px"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="../images/General/twitter.png" height="35px" width="35px"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

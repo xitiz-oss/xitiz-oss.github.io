@@ -1,0 +1,130 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+     <link rel="stylesheet" href="../CSS/bidur_style.css">
+     
+    </head>
+ <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               
+                <ul>
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">about me</a></li>
+                    <li><a href="#services">my services</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, i am <span>Bidur</span>  Neupane <br> from Kathmandu  </h1>
+            </div>
+        </div>
+    </div>
+    <!----------about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../images/Portfolio/bidur/halloween.jpg " alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am Bidur Neupane studying computing in Islington College. I am currently working on a e-commerce website.</p>
+                    
+                    <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    
+                 </div>
+                <div class="tab-contents active-tab"   id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web/app interfaces</li>
+                        <li><span>Web Development</span><br>Web app development</li>
+                        <li><span>App Development</span><br>Building Android/Ios apps</li>
+                    </ul>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------services-------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">my services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-codepen"></i>
+                <h2>Web Design</h2>
+                <p>Well organized and easy to understand Web building.</p>
+                
+                </div>
+                <div>
+                    <i class="fa-light fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Improve the product experience, even for bestselling products that have been on the market for years.</p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-apple-whole"></i>
+                <h2>App Design</h2>
+                <p>Develop application which satisfies our users.</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---contact---->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me </h1>
+                <p>nbidur231@gmail.com</p>
+                <p>9840443648</p>
+                
+
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" placeholder="Your email" required>
+                    <textarea name="Message" placeholder="Your message"  rows="1"></textarea><button type="Submit">Submit </button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright: Made by BidurNeupane</p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassNAme("tab-contents");
+
+        function opentab(tabname){
+         for(tablink of tablinks){
+                tablink.classList.remove(active-link)
+            }
+            for(tabcontents of tabcontents){
+                tabcontents.classList.remove(active-tab)
+            }
+            event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+        }
+
+       
+    
+    </script>
+ </body>
+ </html>
